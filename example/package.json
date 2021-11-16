@@ -1,0 +1,51 @@
+{
+    "name": "firecms-example",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@camberi/firecms": "link:..",
+        "@emotion/react": "link:../node_modules/@emotion/react",
+        "@emotion/styled": "link:../node_modules/@emotion/styled",
+        "@mui/icons-material": "link:../node_modules/@mui/icons-material",
+        "@mui/lab": "link:../node_modules/@mui/lab",
+        "@mui/material": "link:../node_modules/@mui/material",
+        "@mui/styles": "link:../node_modules/@mui/styles",
+        "algoliasearch": "link:../node_modules/algoliasearch",
+        "firebase": "link:../node_modules/firebase",
+        "react": "link:../node_modules/react",
+        "react-dom": "link:../node_modules/react-dom",
+        "react-router": "link:../node_modules/react-router",
+        "react-router-dom": "link:../node_modules/react-router-dom",
+        "react-scripts": "link:../node_modules/react-scripts"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "deploy": "yarn run build && firebase deploy --only hosting"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/react": "link:../node_modules/@types/react",
+        "@types/react-dom": "link:../node_modules/@types/react-dom",
+        "typescript": "link:../node_modules/typescript"
+    }
+}
